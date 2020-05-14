@@ -1,1 +1,10 @@
-<p>protegida works!</p>
+<h1>Perfil de usuario</h1>
+<hr>
+<!-- signo de dolar significa que es un observable -->
+<!-- este es el paso 9 -->
+<!-- aca dice esperemos a que este observable responda y toda la respuesta la asigna a un profile -->
+<!-- es el producto del obserble -->
+<!-- la respuesta la pasa por el pipe json -->
+<pre *ngIf="auth.userProfile$ | async as profile">
+    <code>{{profile| json}}</code>
+</pre>
